@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* página */
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+/* tag */
+
+li{
+
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style-type: none;
+    color: white;
+    font-size: medium  ;
+} 
+
+header{
+    
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;  
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: #111214; 
+}
+
+nav{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    text-decoration-style:none ;
+}
+
+a{
+
+    padding: 0%;
+    text-decoration: none;
+    font-family: Poppins;
+    color: white;
+}   
+
+a:hover{
+
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;       
+}
+
+body{
+
+    font-family: Poppins;
+    width: 100%;
+}
+
+footer{
+
+    background-color: #111214;
+    color: white;
+    display: flex;
+}
+
+footer section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* classes */
+
+.imgLogo{
+
+    width: 13%;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+#carrosselContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#carrossel {
+    width: 100%;
+}
+
+.carrosselBotoes {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(17, 18, 20, 0.3);
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.buttonOrc{
+
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(17, 18, 20, 0.3);
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: rgba(17, 18, 20, 0.6);
+    color: white;
+}
+
+/* Estilo para a descrição sobre a empresa */
+.sobre {
+    position: absolute;
+    top: 50%; /* Posição inicial do parágrafo */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o parágrafo */
+    width: 50%; /* Ajuste a largura conforme necessário */
+    text-align: justify;
+    color: white;
+}
+
+.sobre p {
+    font-size: large;
+    line-height: 1.5; /* Melhor legibilidade */
+}
+
+/* Personalize a posição do parágrafo com base no valor de "top" */
+#textos {
+    position: absolute; 
+    top: 50%; /* Alterar valor aqui para mover o parágrafo para cima ou para baixo */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: justify;
+}
+
+#main{
+
+    height: 1400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    background: linear-gradient(to bottom, #48babb 10%, #111214 );
+    color: black;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#48babb/0.957), 135deg, #111214 ;
+}
+
+.rodapeContainer{
+
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+}
+
+.Informações{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:start;
+    padding-left: 0;
+}
+
+.rodapeContainer section{
+
+    padding-left: -80px;
+}
+
+.Informações ul{
+
+    width: 35%;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    flex-direction: row;
+    padding-bottom: 8px;
+    margin-top: 0px;
+}
+
+.contatoFooter{
+    width: 500px;
+}
+
+footer section article .instaFooter{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer section article .instaFooter article{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer section article .contatoFooter{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logoInsta {
+
+    width: 16px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+footer section article ul p{
+
+    padding-left: 5px;
+}
+
+.Whatsapp{
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+}
+
+.Whatsapp p{
+
+    width: 500px;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    text-align: center; 
+    white-space: nowrap;
+}
+
+.Whatsapp img{
+
+    padding-right: 4px;
+}
+
+.whatsNumero{
+    
+    margin-left: -5px;
+    width: 500px;
+}
+
+.Email{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.Email img{
+
+    padding-right: 4px;
+}
+
+.localização{
+
+    margin-top: -20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 100px;
+}
+
+.endereço{
+
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.endereço img{
+    width: 20px;
+}
+
+.endereçoRua{
+
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    padding-bottom: 0;
+    width: 500px;
+    margin-left: -20px;
+}
+
+.rodape li{
+
+    font-size:14px;
+}
+
+.maps{
+
+    width: 500px;
+    height: 180px;
+    background-color: white;
+}
+
+.mapsContainer{
+
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+footer:after{
+
+    content: "Copyright EdiCarlo Moveis - Todos os direitos reservados 2024";
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+}
+
+#textos{
+
+    margin-top: 85
+    0px;
+}
+
+.profissionaisMain {
+    display: flex;
+    flex-direction: row;  /* Organiza os itens em linha */
+    align-items: flex-start;  /* Alinha os itens no topo */
+    justify-content: space-between;  /* Espaça os itens ao longo do container */
+    width: 80%;  /* Preenche toda a largura disponível */
+    height: auto;  /* Altura automática com base no conteúdo */
+    padding: 20px;  /* Adiciona um pouco de padding */
+    box-sizing: border-box;  /* Garante que o padding não afete o tamanho total */
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#profissionaisMain h2 {
+    margin: 0;  /* Remove margens extras do título */
+    padding-bottom: 10px;  /* Espaçamento entre o título e o parágrafo */
+}
+
+#profissionaisMain p {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;  /* Faz com que o parágrafo ocupe o máximo de espaço disponível */
+    text-align: justify;  /* Justifica o texto */
+}
+
+#profissionaisMain img {
+    width: 150px;  /* Ajuste de largura da imagem */
+    height: auto;  /* Mantém a proporção da imagem */
+    margin-left: 20px;  /* Adiciona um espaço entre o texto e a imagem */
+}
+
+#sobrei h3{
+
+    font-family: 900;
+    font-size: 35px;
+    color: white;
+}
+
+#sobrei h2{
+
+    font-family: 900;
+    font-size: 35px;
+    color: white;
+}
+
+#sobrei h1{
+
+    font-family: 900;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #48babb ;
+}
+
+#sobrei p{
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.equimentoMain{
+
+    color: white;
+    justify-items: start;
+    width: 86%;  /* Preenche toda a largura disponível */
+    height: auto;  /* Altura automática com base no conteúdo */
+    padding: 20px;  /* Adiciona um pouco de padding */
+    box-sizing: border-box;  /* Garante que o padding não afete o tamanho total */
+    color: white;
+    justify-content: center;
+    padding-left: 8%;
+}
+
+.equimentoMain p{
+
+    text-align: justify;
+}
+
+.profissionaisMainTexto{
+
+    justify-items: start;
+    align-items: center;
+    width: 70%;
+    padding-right: 10%;
+}
+
+.profissionaisMainTexto p{
+
+    text-align: justify;
+}
+
+.fotoEdi{
+
+    width: 40%;
+    border-radius: 15px;
+    margin-top: 4%;
+}
+
+.main{
+
+    width: 100%;
+    margin-left: 100px;
+}
+
+.cardMaqina{
+
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(17, 18, 20, 0.3);
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 28%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.fotosMaquinas{
+
+    display: flex;
+    flex-direction: row;
+}
